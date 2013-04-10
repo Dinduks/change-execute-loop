@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ "`uname`" = "Darwin" ]; then
   checker="ls -lRT $1"

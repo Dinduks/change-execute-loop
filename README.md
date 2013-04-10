@@ -3,11 +3,12 @@
 several commands) whenever a given file or directory changes.
 
 # Installation
-```shell
-source /path/to/cel/cel.sh
-```
+Get *cel* and add it to your path.  
+For example:
 
-Add this line to your *.bashrc* or *.zshrc* for more inconvenience.
+```shell
+ln -s /path/to/cel /usr/local/bin
+```
 
 # Use
 ```shell
@@ -16,4 +17,4 @@ cel . cat file.txt
 ```
 
 Notice using double quotes in the first example; without them, only `gcc foo.c`
-will be executed.  
+will be executed.

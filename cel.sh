@@ -1,5 +1,9 @@
 change-execute-loop () {
-  checker="ls -lRT $1"
+  if [ "`uname`" = "Linux" ]; then
+    checker="ls -lR --full-time $1"
+  else
+    checker="ls -lRT $1"
+  fi
   checksum=`eval $checker`
   command="${@: 2:$#}"
   watched_file=$1

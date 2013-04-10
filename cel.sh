@@ -4,8 +4,17 @@ change-execute-loop () {
   else
     checker="ls -lRT $1"
   fi
+
+  if [[ "`echo $SHELL`" =~ "zsh" ]]; then
+    command="$@[2,$#]"
+  elif [[ "`echo $SHELL`" =~ "bash" ]]; then
+    command="${@: 2:$#}"
+  else
+    echo "Shell not supported. The script may not work correctly."
+    command="${@: 2:$#}"
+  fi
+
   checksum=`eval $checker`
-  command="$@[2,$#]"
   watched_file=$1
 
   # Execute the specified command the first time the script's called

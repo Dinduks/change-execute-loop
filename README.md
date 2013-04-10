@@ -3,11 +3,13 @@
 several commands) whenever a given file or directory changes.
 
 # Installation
-Get *cel* and add it to your path.  
+Simply get the *cel* executable and add it to your path.
+
 For example:
 
 ```shell
-ln -s /path/to/cel /usr/local/bin
+curl https://raw.github.com/Dinduks/change-execute-loop/master/cel > ~/apps/cel
+ln -s ~/apps/cel /usr/local/bin
 ```
 
 # Use

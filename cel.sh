@@ -5,7 +5,7 @@ change-execute-loop () {
     checker="ls -lRT $1"
   fi
   checksum=`eval $checker`
-  command="${@: 2:$#}"
+  command="$@[2,$#]"
   watched_file=$1
 
   # Execute the specified command the first time the script's called

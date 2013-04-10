@@ -1,8 +1,8 @@
 change-execute-loop () {
-  if [ "`uname`" = "Linux" ]; then
-    checker="ls -lR --full-time $1"
-  else
+  if [ "`uname`" = "Darwin" ]; then
     checker="ls -lRT $1"
+  else
+    checker="ls -lR --full-time $1"
   fi
 
   if [[ "`echo $SHELL`" =~ "zsh" ]]; then

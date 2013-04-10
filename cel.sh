@@ -22,4 +22,4 @@ change-execute-loop () {
   done
 }
 
-cel () { change-execute-loop $@ }
+cel () { change-execute-loop $@; }

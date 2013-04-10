@@ -2,6 +2,9 @@
 *change-execute-loop* is a minimal shell script that runs a specific command (or
 several commands) whenever a given file or directory changes.
 
+This program aims to be as simple as possible, and independent from any other software,
+may it be an OS or a tool (such as inotify).
+
 # Installation
 Simply get the *cel* executable and add it to your path.
 

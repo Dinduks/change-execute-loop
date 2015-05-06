@@ -11,7 +11,7 @@ Simply get the *cel* executable and add it to your path.
 For example:
 
 ```shell
-curl https://raw.github.com/Dinduks/change-execute-loop/master/cel > ~/apps/cel
+curl https://raw.githubusercontent.com/Dinduks/change-execute-loop/master/cel > ~/apps/cel
 ln -s ~/apps/cel /usr/local/bin
 ```
 
